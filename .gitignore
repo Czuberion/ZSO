@@ -1,2 +1,3 @@
-build/lotnisko*
-logs/log_*
+lotnisko
+lotnisko_d
+log_*

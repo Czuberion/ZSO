@@ -9,28 +9,28 @@ Lotnisko, odprawa, prześwietlanie bagażu. Pasażerowie wybierają sobie jedno 
 ## Kompilacja
 By skompilować program bez wypisywania na stdout:
 
-    gcc -lpthread -o build/lotnisko lotnisko.c
+    gcc -lpthread -o lotnisko lotnisko.c
 
 By skompilować program z info do debugowania bez wypisywania na stdout:
 
-    gcc -g -lpthread -o build/lotnisko lotnisko.c
+    gcc -g -lpthread -o lotnisko lotnisko.c
 
 
 By skompilować program z wypisywaniem na stdout:
 
-    gcc -lpthread -DDEBUG -o build/lotnisko_d lotnisko.c
+    gcc -lpthread -DDEBUG -o lotnisko_d lotnisko.c
 
 By skompilować program z info do debugowania i z wypisywaniem na stdout:
 
-    gcc -g -lpthread -DDEBUG -o build/lotnisko_d lotnisko.c
+    gcc -g -lpthread -DDEBUG -o lotnisko_d lotnisko.c
 
 By skompilować program w obu wersjach z info do debugowania:
 
-    gcc -g -lpthread -o build/lotnisko lotnisko.c && gcc -g -lpthread -DDEBUG -o build/lotnisko_d lotnisko.c
+    gcc -g -lpthread -o lotnisko lotnisko.c && gcc -g -lpthread -DDEBUG -o lotnisko_d lotnisko.c
 
-Ewentualnie jeszcze z najmniejszym poziomem optymalizacji (by zasymulować pracę przy bramkach):
+Ewentualnie jeszcze z najmniejszym poziomem optymalizacji (by lepiej (?) zasymulować pracę przy bramkach):
 
-    gcc -g -O0 -lpthread -o build/lotnisko lotnisko.c && gcc -g -O0 -lpthread -DDEBUG -o build/lotnisko_d lotnisko.c
+    gcc -g -O0 -lpthread -o lotnisko lotnisko.c && gcc -g -O0 -lpthread -DDEBUG -o lotnisko_d lotnisko.c
 
 ## Debugowanie
 Debugowanie za pomocą:
