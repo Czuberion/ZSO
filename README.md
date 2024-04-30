@@ -33,6 +33,7 @@ Ewentualnie jeszcze z najmniejszym poziomem optymalizacji (by lepiej (?) zasymul
     gcc -g -O0 -lpthread -o lotnisko lotnisko.c && gcc -g -O0 -lpthread -DDEBUG -o lotnisko_d lotnisko.c
 
 ## Debugowanie
+Przydatna będzie wspomniana wyżej opcja `-g` przy kompilacji.
 Debugowanie za pomocą:
 
     valgrind --log-file=log_helgrind.txt --tool=helgrind ./lotnisko
