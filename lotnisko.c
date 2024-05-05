@@ -102,7 +102,7 @@ void* passenger_function(void* arg) {
         //DEBUG_PRINT("Passenger %d, Gate %d: [L][E] Unlock global.\n", id, chosen_gate_idx);
         pthread_mutex_unlock(&global_lock);
 
-        // Kontrola osobista
+        // Personal check
         DEBUG_PRINT("Passenger %d, Gate %d: [P%d->C][S] Personal check start.\n", id, chosen_gate_idx, this_prob);
         pthread_t check;
         pthread_create(&check, NULL, personal_check, &seed);
